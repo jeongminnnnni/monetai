@@ -111,8 +111,8 @@ export default function HowItWorks() {
                         <span className="bg-gradient-to-r from-gray-600 to-black dark:from-gray-400 dark:to-white bg-clip-text text-transparent">
                             {t('how.title.highlight')}
                         </span>
-                        {t('how.title.line2')}
-                        {t('how.title.line3') && (
+                        {t('how.title.line2') && t('how.title.line2').trim() !== '' && t('how.title.line2')}
+                        {t('how.title.line3') && t('how.title.line3').trim() !== '' && (
                             <>
                                 <br />
                                 {t('how.title.line3')}
